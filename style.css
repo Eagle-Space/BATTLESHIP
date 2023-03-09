@@ -1,0 +1,43 @@
+#board {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 1px;
+  background-color: #444;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+
+
+.cell.hit {
+  background-color: red;
+}
+
+.cell.miss {
+  background-color: grey;
+}
+
+#reset {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #aaa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
